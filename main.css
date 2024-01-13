@@ -16,11 +16,6 @@ header{
     margin-bottom: 40px;
 }
 
-header img{
-    height: 36px;
-    margin-right: 16px;
-}
-
 header h1{
     font-size: 40px;
     font-weight: bold;
@@ -84,4 +79,31 @@ table td{
     color: #fff;
     background-color: #000;
     border-radius: 3px;
+}
+
+@media (max-width: 767px) {
+    header{
+        display: block;
+        text-align: center;
+    }
+
+    form{
+        display: block;
+    }
+
+    form input,
+    form button{
+        display: block;
+        text-align: center;
+        align-items: center;
+        margin: 20px;
+        width: 90%;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 767px) {
+    header,
+    form {
+        margin: 40px;
+    }
 }
